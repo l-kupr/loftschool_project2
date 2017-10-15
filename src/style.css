@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-times:before {
+  content: ""; }
+
+.fa-map-marker:before {
+  content: ""; }
+
+@font-face {
+  font-family: 'fira bold';
+  src: url("fonts/firasans-bold-webfont.woff") format("woff"), url("fonts/firasans-bold-webfont.svg#fira_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fira light';
+  src: url("fonts/firasans-light-webfont.woff") format("woff"), url("fonts/firasans-light-webfont.svg#fira_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fira medium';
+  src: url("fonts/firasans-medium-webfont.woff") format("woff"), url("fonts/firasans-medium-webfont.svg#fira_sansmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fira regular';
+  src: url("fonts/firasans-regular-webfont.woff") format("woff"), url("fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body, html, textarea {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "fira regular";
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+.photo {
+    width: 100%;
+    text-align: center;
+}
+.photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+}
+.red {
+    color: #8f2828;
+}
+.ymaps-2-1-55-balloon-content__footer {
+    text-align: center;
+}
+
+.review {
+    font-size: 12px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 450px;
+    width: 300px;
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 5px;
+    display: none;
+}
+.review__head {
+    font-size: 10px;
+    background-color: #ff8563;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    padding: 10px 3px 3px 10px;
+    min-height: 20px;
+    line-height: 1;
+    cursor: all-scroll;
+}
+
+.review__address {
+  width: 260px;
+  display: inline-table;
+}
+
+.review__head .fa-map-marker {
+    margin-right: 5px;
+}
+.review__head .fa-times {
+    float: right;
+    font-size: 14px;
+    position: absolute;
+    top: 4px;
+    right: -3px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+.review__content {
+    padding: 5px 5px 5px 10px;
+    height: 38%;
+    overflow-y: auto;
+}
+.review__label {
+    padding: 5px 5px 5px 10px;
+    color: #ff8563;
+}
+.review__input {
+    padding: 5px 8px;
+}
+.review__input input {
+    height: 24px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 95%;
+    padding: 0 5px;
+    font-size: 12px;
+}
+.review__input textarea {
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    width: 95%;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 1.5;
+}
+.username {
+  font-size: 13px;
+  color: rgb(79,79,79);
+  font-family: "fira medium";
+  margin-right: 5px;
+}
+
+.place {
+  font-size: 12px;
+  color: #808080;
+  font-family: "fira regular";
+}
+
+.date {
+  font-size: 11px;
+  color: #808080;
+  font-family: "fira regular";
+}
+
+.reviewtext {
+  max-width: 339px;
+  min-height: 27px;
+  font-size: 12px;
+  color: rgb(79,79,79);
+  font-family: "fira regular";
+  line-height: 1;
+  word-break: break-all;
+}
+
+.ballon_header,
+.ballon_body,
+.ballon_footer
+{
+  font-size: 10px;
+}
+.ballon_body {
+  max-height: 70px;
+  overflow-y: auto;
+}
+.ballon_footer {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: #999;
+}
+.where {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.address {
+  color:blue;
+  text-decoration: underline;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    width: 74px;
+    height: 28px;
+    color: #ffffff;
+    -webkit-border-radius: 10px;
+    border-radius: 8px;
+    background-color: #ff8563;
+    border: none;
+    float: right;
+    outline: none;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar {width: 7px;}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-input-placeholder {color:#cececf;}
+::-moz-placeholder          {color:#cececf;}/* Firefox 19+ */
+:-moz-placeholder           {color:#cececf;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#cececf;}
+::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{htmlWebpackPlugin.options.title}}</title>
+  <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+	<div id="review" class="review">
+    	<div id="review_head" class="review__head">
+    		<i class="fa fa-map-marker"></i>
+    		<span id="address" class="review__address"></span>
+    		<i class="fa fa-times"></i></div>
+    	<div id="content" class="review__content"><span id="empty">Отзывов пока нет...</span></div>
+    	<div class="review__label">ВАШ ОТЗЫВ</div>
+    	<div class="review__input"><input placeholder="Ваше имя" type="text" id="username"></div>
+    	<div class="review__input"><input placeholder="Укажите место" type="text" id="place"></div>
+    	<div class="review__input"><textarea rows="4" placeholder="Поделитесь впечатлениями" id="review_content"></textarea></div>
+    	<button id="saveBtn">Добавить</button>
+	</div>	
+	<div id="map"></div>
+</body>
+</html>
