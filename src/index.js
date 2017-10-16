@@ -27,6 +27,7 @@ ymaps.ready(() => {
         openBalloonOnClick: true,
         clusterDisableClickZoom: true,
         clusterOpenBalloonOnClick: true,
+        clusterHideIconOnBalloonOpen: false,
         // Устанавливаем стандартный макет балуна кластера "Карусель".
         clusterBalloonContentLayout: 'cluster#balloonCarousel',
         // Устанавливаем собственный макет.
